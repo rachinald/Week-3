@@ -18,8 +18,13 @@ const showTinkPic = document.getElementById("tinkPic");
 const showTomPic = document.getElementById("tomPic");
   
   document.addEventListener('keypress', (event)=> {
+
       if(event.key == 'a'){
-          playBoomSound.play()
+
+            playBoomSound.pause()
+            playBoomSound.currentTime = 0
+            playBoomSound.play();
+
           showBoomPic.style.display = "block";
           showClapPic.style.display = "none";
           showHihatPic.style.display = "none";
@@ -30,8 +35,14 @@ const showTomPic = document.getElementById("tomPic");
           showTinkPic.style.display = "none";
           showRidePic.style.display = "none";
           showHihatPic.style.display = "none";
+
+          
+
       } else if(event.key =='s'){
-            playClapSound.play() 
+
+            playClapSound.pause()
+            playClapSound.currentTime = 0
+            playClapSound.play();
             
             showBoomPic.style.display = "none";  
             showClapPic.style.display = "block"; 
@@ -43,9 +54,13 @@ const showTomPic = document.getElementById("tomPic");
             showTinkPic.style.display = "none"; 
             showRidePic.style.display = "none"; 
             showHihatPic.style.display = "none";
-            showKickPic.style.display = "none";
+
         } else if(event.key =='d'){
-            playHihatSound.play()
+
+            playHihatSound.pause()
+            playHihatSound.currentTime = 0
+            playHihatSound.play();
+
             showBoomPic.style.display = "none"; 
             showHihatPic.style.display = "block";
             showClapPic.style.display = "none";
@@ -55,8 +70,13 @@ const showTomPic = document.getElementById("tomPic");
             showTomPic.style.display = "none";
             showTinkPic.style.display = "none";
             showRidePic.style.display = "none";
+
         } else if(event.key =='f'){
-            playKickSound.play()
+
+            playKickSound.pause()
+            playKickSound.currentTime = 0
+            playKickSound.play();
+
             showHihatPic.style.display = "none";
             showBoomPic.style.display = "none"; 
             showKickPic.style.display = "block";
@@ -68,7 +88,10 @@ const showTomPic = document.getElementById("tomPic");
             showClapPic.style.display = "none";
             
         } else if(event.key =='g'){
-            playOpenhatSound.play()
+
+            playOpenhatSound.pause()
+            playOpenhatSound.currentTime = 0
+            playOpenhatSound.play();
 
             showHihatPic.style.display = "none";
             showBoomPic.style.display = "none"; 
@@ -79,8 +102,13 @@ const showTomPic = document.getElementById("tomPic");
             showRidePic.style.display = "none";
             showKickPic.style.display = "none";
             showClapPic.style.display = "none";
+
         } else if(event.key =='h'){
-            playRideSound.play()
+
+            playRideSound.pause()
+            playRideSound.currentTime = 0
+            playRideSound.play();
+
             showHihatPic.style.display = "none";
             showBoomPic.style.display = "none"; 
             showRidePic.style.display = "block";
@@ -90,8 +118,13 @@ const showTomPic = document.getElementById("tomPic");
             showTinkPic.style.display = "none";
             showKickPic.style.display = "none";
             showClapPic.style.display = "none";
+
         } else if(event.key =='j'){
-            playSnareSound.play()
+
+            playSnareSound.pause()
+            playSnareSound.currentTime = 0
+            playSnareSound.play();
+
             showOpenhatPic.style.display = "none";
             showHihatPic.style.display = "none";
             showBoomPic.style.display = "none"; 
@@ -103,7 +136,11 @@ const showTomPic = document.getElementById("tomPic");
             showClapPic.style.display = "none";
             
         } else if(event.key =='k'){
-            playTinkSound.play()
+
+            playTinkSound.pause()
+            playTinkSound.currentTime = 0
+            playTinkSound.play();
+
             showOpenhatPic.style.display = "none";
             showHihatPic.style.display = "none";
             showBoomPic.style.display = "none"; 
@@ -113,8 +150,13 @@ const showTomPic = document.getElementById("tomPic");
             showRidePic.style.display = "none";
             showClapPic.style.display = "none";
             showSnarePic.style.display = "none";
+
         } else if(event.key =='l'){
-            playTomSound.play()
+
+            playTomSound.pause()
+            playTomSound.currentTime = 0
+            playTomSound.play();
+
             showOpenhatPic.style.display = "none";
             showHihatPic.style.display = "none";
             showBoomPic.style.display = "none"; 
