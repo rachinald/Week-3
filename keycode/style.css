@@ -13,21 +13,29 @@ body {
     letter-spacing: 2px;
     color: #d2cbcb;
     
+    
 }
 
 .code {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
+    background-color: #323d4d;
+    margin: 30px 30px;
+    
 }
 
 .charcode {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
+    background-color: #323d4d;
+    margin: 30px 30px;
 }
 
 .key {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
+    background-color: #323d4d;
+    margin: 30px 30px;
 }
 
 h1 {

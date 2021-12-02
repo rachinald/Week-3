@@ -171,3 +171,169 @@ const showTomPic = document.getElementById("tomPic");
   }
   
   })
+
+  const boomButton = document.getElementById("boomButton");
+  const clapButton = document.getElementById("clapButton");
+  const hihatButton = document.getElementById("hithatButton");
+  const kickButton = document.getElementById("kickButton");
+  const openhatButton = document.getElementById("openhatButton");
+  const rideButton = document.getElementById("rideButton");
+  const snareButton = document.getElementById("snareButton");
+  const tinkButton = document.getElementById("tinkButton");
+  const tomButton = document.getElementById("tomButton");
+
+  boomButton.addEventListener("click", ()=> {
+
+    playBoomSound.pause()
+    playBoomSound.currentTime = 0
+    playBoomSound.play();
+
+  showBoomPic.style.display = "block";
+  showClapPic.style.display = "none";
+  showHihatPic.style.display = "none";
+  showKickPic.style.display = "none";
+  showOpenhatPic.style.display = "none";
+  showSnarePic.style.display = "none";
+  showTomPic.style.display = "none";
+  showTinkPic.style.display = "none";
+  showRidePic.style.display = "none";
+  showHihatPic.style.display = "none";
+    
+})
+
+clapButton.addEventListener("click", ()=> {
+
+    playClapSound.pause()
+            playClapSound.currentTime = 0
+            playClapSound.play();
+            
+            showBoomPic.style.display = "none";  
+            showClapPic.style.display = "block"; 
+            showHihatPic.style.display = "none";
+            showKickPic.style.display = "none"; 
+            showOpenhatPic.style.display = "none"; 
+            showSnarePic.style.display = "none"; 
+            showTomPic.style.display = "none";  
+            showTinkPic.style.display = "none"; 
+            showRidePic.style.display = "none"; 
+            showHihatPic.style.display = "none";
+})
+
+hihatButton.addEventListener("click", ()=> {
+
+    playHihatSound.pause()
+            playHihatSound.currentTime = 0
+            playHihatSound.play();
+
+            showBoomPic.style.display = "none"; 
+            showHihatPic.style.display = "block";
+            showClapPic.style.display = "none";
+            showKickPic.style.display = "none";
+            showOpenhatPic.style.display = "none";
+            showSnarePic.style.display = "none";
+            showTomPic.style.display = "none";
+            showTinkPic.style.display = "none";
+            showRidePic.style.display = "none";
+})
+
+kickButton.addEventListener("click", ()=> {
+
+    playKickSound.pause()
+            playKickSound.currentTime = 0
+            playKickSound.play();
+
+            showHihatPic.style.display = "none";
+            showBoomPic.style.display = "none"; 
+            showKickPic.style.display = "block";
+            showOpenhatPic.style.display = "none";
+            showSnarePic.style.display = "none";
+            showTomPic.style.display = "none";
+            showTinkPic.style.display = "none";
+            showRidePic.style.display = "none";
+            showClapPic.style.display = "none";
+})
+
+openhatButton.addEventListener("click", ()=> {
+
+    playOpenhatSound.pause()
+            playOpenhatSound.currentTime = 0
+            playOpenhatSound.play();
+
+            showHihatPic.style.display = "none";
+            showBoomPic.style.display = "none"; 
+            showOpenhatPic.style.display = "block";
+            showSnarePic.style.display = "none";
+            showTomPic.style.display = "none";
+            showTinkPic.style.display = "none";
+            showRidePic.style.display = "none";
+            showKickPic.style.display = "none";
+            showClapPic.style.display = "none";
+})
+
+rideButton.addEventListener("click", ()=> {
+
+    playRideSound.pause()
+            playRideSound.currentTime = 0
+            playRideSound.play();
+
+            showHihatPic.style.display = "none";
+            showBoomPic.style.display = "none"; 
+            showRidePic.style.display = "block";
+            showOpenhatPic.style.display = "none";
+            showSnarePic.style.display = "none";
+            showTomPic.style.display = "none";
+            showTinkPic.style.display = "none";
+            showKickPic.style.display = "none";
+            showClapPic.style.display = "none";
+})
+
+snareButton.addEventListener("click", ()=> {
+
+    playSnareSound.pause()
+            playSnareSound.currentTime = 0
+            playSnareSound.play();
+
+            showOpenhatPic.style.display = "none";
+            showHihatPic.style.display = "none";
+            showBoomPic.style.display = "none"; 
+            showSnarePic.style.display = "block";
+            showTomPic.style.display = "none";
+            showTinkPic.style.display = "none";
+            showKickPic.style.display = "none";
+            showRidePic.style.display = "none";
+            showClapPic.style.display = "none";
+})
+
+tinkButton.addEventListener("click", ()=> {
+
+    playTinkSound.pause()
+            playTinkSound.currentTime = 0
+            playTinkSound.play();
+
+            showOpenhatPic.style.display = "none";
+            showHihatPic.style.display = "none";
+            showBoomPic.style.display = "none"; 
+            showTinkPic.style.display = "block";
+            showTomPic.style.display = "none";
+            showKickPic.style.display = "none";
+            showRidePic.style.display = "none";
+            showClapPic.style.display = "none";
+            showSnarePic.style.display = "none";
+})
+
+tomButton.addEventListener("click", ()=> {
+
+    playTomSound.pause()
+            playTomSound.currentTime = 0
+            playTomSound.play();
+
+            showOpenhatPic.style.display = "none";
+            showHihatPic.style.display = "none";
+            showBoomPic.style.display = "none"; 
+            showTomPic.style.display = "block";
+            showTinkPic.style.display = "none";
+            showKickPic.style.display = "none";
+            showRidePic.style.display = "none";
+            showClapPic.style.display = "none";
+            showSnarePic.style.display = "none";
+})
