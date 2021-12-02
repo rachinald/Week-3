@@ -1,35 +1,30 @@
+// this will generate a random number between 1 - 6
+const RandomNum = Math.floor(Math.random() *6) +1
 
-const dice1 = document.getElementById("dice1");
-const dice2 = document.getElementById("dice2");
-const dice3 = document.getElementById("dice3");
-const dice4 = document.getElementById("dice4");
-const dice5 = document.getElementById("dice5");
-const dice6 = document.getElementById("dice6");
+// This creates the image by adding .png to dice plus random number, this is genius!
+const firstDiceImage = "assets/dice" + RandomNum + ".png";
 
-const clickButton = document.getElementById("button");
+const score = document.getElementById("score");
+const message = document.getElementById("message");
 
-button.addEventListener("click", ()=> {
 
-  if (image.style.display == "none") {
-      image.style.display = "block";
-      button.textContent = "hide";
-  } else {
-      image.style.display = "none";
-      button.textContent = "show";
-  }
-})
+button.addEventListener("click",()=>{
 
+  
+  document.querySelectorAll('img')[0].setAttribute("src", firstDiceImage);
+  
+  score.innerHTML = RandomNum;
+
+
+});
 
 
 
-
-
-let rolldice = {
-    sides: 6,
-    roll: function () {
-      let randomNumber = Math.floor(Math.random() * this.sides) + 1;
-      return randomNumber;
-    }
-  }
-
-
+  // if (RandomNum == 1.){
+  //   message.innerhtml = "You have lost!";
+  
+  // } else (RandomNum == >19.){
+  //   message.innerhtml = "You have won!";
+  // }
+  
+  

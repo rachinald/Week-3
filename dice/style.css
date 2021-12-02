@@ -1,14 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 body {
     background-color: #111719;
+    
+}
+
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
     color: #d2cbcb;
+    margin: 10px;
 }
 
-.title {
-    margin: 70px 0px;
-    width: 400px;
+.letsplay, .lets, .play {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 1px;
+    margin: 30px 10px;
+    color: #d2cbcb;
+    text-shadow: 0 3px #80503a, 0 5px #80503a, 0 5px #80503a;
+  }
+
+  @keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
 }
+
+.L1 {
+animation: bounce 1s ease infinite;
+}
+
+.E {
+animation: bounce 1s ease infinite .1s;
+}
+
+.T {
+animation: bounce 1s ease infinite .2s;
+}
+
+.S {
+animation: bounce 1s ease infinite .3s;
+}
+
+.P {
+animation: bounce 1s ease infinite .4s;
+}
+
+.L2 {
+animation: bounce 1s ease infinite .5s;
+}
+
+.A {
+animation: bounce 1s ease infinite .6s;
+    }
+
+.Y {
+animation: bounce 1s ease infinite .7s;
+        }
+
+
 
 .gameBox {
 
@@ -47,11 +105,14 @@ body {
 
 .score {
 
+    display: flex;
+    justify-content: center;
     font-size:15px;
 }
 
-.dice {
-
-    width:140px;
+.diceBox {
+    
+    width: 150px;
+    height: 161px;
     
 }
