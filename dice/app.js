@@ -1,28 +1,9 @@
-// // this will generate a random number between 1 - 6
-const randomNum = Math.floor(Math.random() *6) +1
-
-// This creates the image by adding .png to dice plus random number, this is genius!
-const randomDiceImage = "assets/dice" + randomNum + ".png";
-
-const score = document.getElementById("score") 
+const score = document.getElementById("score");
 const message = document.getElementById("message");
 
-
-
-
-// function for gamePlaying (init = initialise game)
-
-// play () = > {
-
-// reseting score vars
-
-// scores = [0, 0];
-// roundScore = 0,
-// gameplaying = true;
-
-// randomDiceImage.style.display = "none";
-
-// }
+// variable that holds a number
+// this can't be in the event listener because it will only change when we change it so when you click the button you add the random number to it but it never resets the score variable, only adds to it
+let totalScore = 0;
 
 
 
@@ -31,36 +12,34 @@ const message = document.getElementById("message");
 
 button.addEventListener("click",()=>{
 
-  
+  // // this will generate a random number between 1 - 6
+const randomNum = Math.floor(Math.random() *6) +1;
+
+// This creates the image by adding .png to dice plus random number, this is genius!
+const randomDiceImage = "assets/dice" + randomNum + ".png";
+
 
  // displays dice image
   document.querySelectorAll('img')[0].setAttribute("src", randomDiceImage);
-
-  // generates a random number and puts it into the score
-  // score.innerHTML = randomNum;
+ 
 
   // += adds the value of the right operand to a variable and assigns the result to the variable.
-  // score += randomNum;
+    // so this code adds the randomNum's together:
+  totalScore += randomNum;
+  score.innerHTML = totalScore;
+  
+  
 
-  //   message.innerHTML = "Cool! Roll again!";
-
-  // }
-
-  // else {
-
-  //   message.innerHTML = "You lose!";
-  // }
-
+if (randomNum == 1){
+    message.innerHTML = "You have lost! reloading game...",
+    setTimeout(function(){ location.reload(); }, 1300);
+    
+  
+} else if (totalScore > 19) 
+    message.innerHTML = "You have won! reloading game...",
+    setTimeout(function(){ location.reload(); }, 1300);
+    
+  
+    
 
 });
-
-
-
-  // if (RandomNum == 1.){
-  //   message.innerhtml = "You have lost!";
-  
-  // } else (RandomNum == >19.){
-  //   message.innerhtml = "You have won!";
-  // }
-  
-  
