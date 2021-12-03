@@ -37,7 +37,7 @@ button.addEventListener("click",()=>{
   document.querySelectorAll('img')[0].setAttribute("src", randomDiceImage);
 
   // generates a random number and puts it into the score
-  score.innerHTML = randomNum;
+  // score.innerHTML = randomNum;
 
   // += adds the value of the right operand to a variable and assigns the result to the variable.
   // score += randomNum;
